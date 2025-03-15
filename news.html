@@ -13,7 +13,7 @@
     <meta name="apple-mobile-web-app-title" content="ZoroStyle" />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
     <!------------------------------------------------------------------------------------- -->
-    <title>ZoroStyle</title>
+    <title>Новости - ZoroStyle</title>
   </head>
   <body>
     <!-- ================================================================= -->
@@ -42,8 +42,8 @@
                 </li>
                 <li class="menu__item item-menu link-hover"><a href="command.html" class="item-menu__link">Наша команда</a></li>
                 <li class="menu__item item-menu link-hover"><a href="works.html" class="item-menu__link">Галерея</a></li>
-                <li class="menu__item item-menu link-hover item-menu__hover-active"><a href="contacts.html" class="item-menu__link">Контакты</a></li>
-                <li class="menu__item item-menu link-hover"><a href="news.html" class="item-menu__link">Новости</a></li>
+                <li class="menu__item item-menu link-hover"><a href="contacts.html" class="item-menu__link">Контакты</a></li>
+                <li class="menu__item item-menu link-hover item-menu__hover-active"><a href="news.html" class="item-menu__link">Новости</a></li>
               </ul>
             </nav>
             <div class="header__contacts contacts-header">
@@ -74,61 +74,75 @@
         <main class="main">
           <div class="main__content content-main">
             <!-- Subheader -->
-            <div class="content-main__subheader subheader subheader—hairsalon" id="subheader">
+            <div class="content-main__subheader subheader subheader—hairsalon">
               <div class="subheader__container __container">
-                <h2 class="subheader__title hairsalon__title">Наши Контакты</h2>
+                <h1 class="subheader__title hairsalon__title">Новости</h1>
                 <div class="subheader__content content-subheader__hairsalon">
                   <nav class="subheader__breadcumps breadcumps">
                     <ul class="breadcumps__list">
-                      <li class="breadcumps__item"><a href="index.html" class="breadcumps__link" title="Главная">Главная</a><span class="breadcumps__arrow"></span><span class="breadcumps__next-tab">Контакты</span></li>
+                      <li class="breadcumps__item">
+                        <a href="index.html" class="breadcumps__link" title="Главная">Главная</a>
+                        <span class="breadcumps__arrow"></span>
+                        <span class="breadcumps__next-tab">Новости</span></li>
                     </ul>
                   </nav>
                   </div>
                 </div>
             </div>
-            <!-- About -->
-            <div class="content-main__about about">
-              <div class="about__container">
-                <div class="about__gallery">
-                  <img src="img/main/about/about1.jpg" alt="">
-                  <img src="img/main/about/about2.jpg" alt="">
-                  <img src="img/main/about/about3.jpg" alt="">
-                </div>
-                <p class="about__description">
-                  <span>Добро пожаловать в Barber Salon!</span>
-                  <span>Наша команда готова порадовать вас результатом работы с 4/6 руками, обеспечивая максимальный комфорт и стильный образ, в салоне или у вас дома.</span>
-                  <span>Доверьте нам заботу о вашей красоте!</span>
-                </p>
-              </div>
-            </div>
-            <!-- Map -->
-            <div class="content-main__map map">
-              <div class="map__container __container">
-                <div class="map__box">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d97540.91033702146!2d44.5120512!3d40.1833984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sam!4v1719671221280!5m2!1sru!2sam" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  <div class="map__contacts">
-                    <h2 class="map__title title">Контакты</h2>
-                    <a href="#" class="map__link map__address">Адрес</a>
-                    <a href="#" class="map__link map__schedule">График работы</a>
-                    <a href="tel:+79771001111" class="map__link map__call">+7 (977) 100-11-11</a>
-                    <span></span>
-                    <div class="map__links">
-                      <a href="#" class="map__icon map__telegram"><img src="img/main/map/telegram.svg" alt="Telegram icon" title="Telegram"></a>
-                      <a href="#" class="map__icon map__whatsapp"><img src="img/main/map/whatsapp.svg" alt="Whatsapp icon" title="Whatsapp"></a>
+            <!-- News | News Page -->
+            <div class="content-main__news content-main__news-page news" role="region" aria-label="Новости">
+                <div class="news__container __container">
+                  <div class="news__frame">
+                    <div class="news__content">
+                      <ul class="news__list">
+                        <li class="news__item item-news">
+                          <a href="singlenews.html" class="item-news__link">
+                            <div class="item-news__img"><img src="img/main/news/img1.png" alt="Изображение новости"></div>
+                            <div class="item-news__body">
+                              <div class="item-news__date"><time datetime="2024-08-27">27 августа, 2024</time></div>
+                              <div class="item-news__description">
+                                <p>Твоя идеальная прическа начинается здесь</p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="news__item item-news">
+                          <a href="singlenews.html" class="item-news__link">
+                            <div class="item-news__img"><img src="img/main/news/img2.png" alt="Изображение новости"></div>
+                            <div class="item-news__body">
+                              <div class="item-news__date"><time datetime="2024-08-26">26 августа, 2024</time></div>
+                              <div class="item-news__description">
+                                <p>Время для перемен — начни с волос</p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="news__item item-news">
+                          <a href="singlenews.html" class="item-news__link">
+                            <div class="item-news__img"><img src="img/main/news/img3.png" alt="Изображение новости"></div>
+                            <div class="item-news__body">
+                              <div class="item-news__date"><time datetime="2024-08-24">24 августа, 2024</time></div>
+                              <div class="item-news__description">
+                                <p>Красота в каждой пряди</p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="news__item item-news">
+                            <a href="singlenews.html" class="item-news__link">
+                              <div class="item-news__img"><img src="img/main/news/img3.png" alt="Изображение новости"></div>
+                              <div class="item-news__body">
+                                <div class="item-news__date"><time datetime="2024-08-24">24 августа, 2024</time></div>
+                                <div class="item-news__description">
+                                  <p>Красота в каждой пряди</p>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- Description -->
-            <div class="content-main__descrip descrip">
-              <div class="descrip__container __container">
-                <div class="descrip__frame">
-                  <div class="descrip__block">Таким образом начало повседневной работы по формированию позиции в значительной степени обуславливает создание форм развития. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке форм развития. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки дальнейших направлений развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения форм развития. Товарищи! рамки и место обучения кадров требуют определения и уточнения существенных финансовых и административных условий.</div>
-                  <div class="descrip__block">Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации существенных финансовых и административных условий. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа направлений прогрессивного развития.</div>
-                  <div class="desctip__block">С другой стороны рамки и место обучения кадров требуют от нас анализа направлений прогрессивного развития. Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. </div>
-                </div>
-              </div>
             </div>
             <!-- Floating button -->
             <article class="floating-button">
@@ -156,6 +170,14 @@
                 <img src="img/main/floating/contacts.svg" alt="Contacts icon" id="floCon" class="vibrating">
               </div>
             </article>
+            <!------------------------------->
+            <!-- Modal Menu for Images -->
+            <div id="modalMenu" class="modal-menu">
+              <div class="modal-menu__close"></div>
+              <div class="modal-menu__frame" id="modalFrame">
+                <img class="modal-menu__image" id="modalImage">
+              </div>
+              
             <!------------------------------->
           </div>
         </main>

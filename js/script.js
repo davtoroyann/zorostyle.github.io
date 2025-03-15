@@ -158,7 +158,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
-
 // ========================================================================
 // Masters Slider
 document.addEventListener('DOMContentLoaded', function() {
@@ -259,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Sroll Up
-    let footerUp = document.querySelector('.footer__up-block');
+    let footerUp = document.querySelector('.footer__up');
     if (footerUp) {
         footerUp.addEventListener('click', (e) => {
             e.preventDefault();
@@ -308,8 +307,8 @@ document.addEventListener('DOMContentLoaded', function() {
         floCon.classList.toggle('vibrating');
     })
 })
-
-// 
+// ========================================================================
+// Blur Effect  
 document.querySelectorAll('a, button, input[type="button"], input[type="submit"], input[type="reset"]').forEach(function(element) {
     element.addEventListener('focus', function(event) {
         event.target.blur();
@@ -367,6 +366,37 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-
 // ========================================================================
+// Footer Accordeons
+document.addEventListener('DOMContentLoaded', function () {
+    const accordions = document.querySelectorAll('.top-footer__nav h2');
+
+    accordions.forEach(accordion => {
+        accordion.addEventListener('click', function (e) {
+            const clickedAccordion = e.target.closest('h2');
+            if (!clickedAccordion) return;
+
+            const content = clickedAccordion.nextElementSibling;
+            const isOpen = clickedAccordion.classList.contains('_active');
+
+            accordions.forEach(acc => {
+                acc.classList.remove('_active');
+                acc.nextElementSibling.style.maxHeight = '0';
+                acc.nextElementSibling.style.opacity = '0';
+                acc.nextElementSibling.style.visibility = 'hidden';
+                acc.nextElementSibling.style.padding = '0';
+            });
+
+            if (!isOpen) {
+                clickedAccordion.classList.add('_active');
+                const padding = 30;
+                content.style.maxHeight = content.scrollHeight + padding + 'px';
+                content.style.opacity = '1';
+                content.style.visibility = 'visible';
+                content.style.padding = '15px 0';
+            }
+        });
+    });
+});
+// ========================================================================
+
