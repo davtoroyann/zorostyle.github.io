@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/favicon/favicon-48x48.png" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
@@ -12,6 +11,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="ZoroStyle" />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <!-- ------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
     <!------------------------------------------------------------------------------------- -->
     <title>ZoroStyle</title>
   </head>
@@ -31,7 +33,11 @@
                 <li class="menu__item item-menu link-hover item-menu__hover-active"><a href="index.html" class="item-menu__link">Главная</a></li>
                 <li class="menu__item item-menu link-hover">
                   <a href="uslugi.html" class="item-menu__link">Услуги</a>
-                  <div class="item-menu__arrow"></div>
+                  <div class="item-menu__arrow">
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.244802 0.243704C0.321897 0.166451 0.41347 0.105161 0.514282 0.0633431C0.615093 0.0215252 0.723161 0 0.832302 0C0.941442 0 1.04951 0.0215252 1.15032 0.0633431C1.25113 0.105161 1.34271 0.166451 1.4198 0.243704L4.65313 3.47704L7.88647 0.243704C8.04228 0.0878888 8.25361 0.00035286 8.47397 0.00035286C8.69432 0.00035286 8.90565 0.0878888 9.06147 0.243704C9.21728 0.399518 9.30482 0.610848 9.30482 0.831204C9.30482 1.05156 9.21728 1.26289 9.06147 1.4187L5.23647 5.2437C5.15937 5.32096 5.0678 5.38225 4.96699 5.42406C4.86618 5.46588 4.75811 5.48741 4.64897 5.48741C4.53983 5.48741 4.43176 5.46588 4.33095 5.42406C4.23014 5.38225 4.13856 5.32096 4.06147 5.2437L0.236468 1.4187C-0.0801983 1.10204 -0.0801981 0.568704 0.244802 0.243704Z" fill="white"/>
+                      </svg>
+                  </div>
                   <ul class="item-menu__sub-menu sub-menu">
                     <li class="sub-menu__item"><a href="uslugi.html" class="sub-menu__link">Мужской зал</a></li>
                     <li class="sub-menu__item"><a href="uslugi.html" class="sub-menu__link">Женский зал</a></li>
@@ -56,8 +62,20 @@
               <span class="contacts-header__pipe"></span>
               <div class="contacts-header__links links-header">
                 <ul class="links-header__list">
-                  <li class="links-header__item"><a href="https://t.me/+79152366569" class="links-header__link" target="_blank"><img src="img/header/telegram.svg" alt="Telegram Icon" title="Telegram" class="links-header__icon"></a></li>
-                  <li class="links-header__item"><a href="https://wa.me/+79152366569" class="links-header__link" target="_blank"><img src="img/header/whatsapp.svg" alt="Whatsapp Icon" title="Whatsapp" class="links-header__icon"></a></li>
+                  <li class="links-header__item">
+                    <a href="https://t.me/+79152366569" class="links-header__link" target="_blank" rel="noopener noreferrer">
+                      <svg width="18" height="15" viewBox="0 0 18 15" fill="red" xmlns="http://www.w3.org/2000/svg" class="header__svg-icon">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6626 14.0065C14.6736 14.4051 15.0527 13.57 15.0527 13.57L17.7277 1.45982C17.7066 0.6436 16.4849 1.13712 16.4849 1.13712L1.50943 6.43289C1.50943 6.43289 0.7933 6.6607 0.856487 7.05932C0.919675 7.45795 1.48837 7.6477 1.48837 7.6477L5.25857 8.78667C5.25857 8.78667 6.3959 12.1463 6.62765 12.7917C6.83822 13.4181 7.02787 13.437 7.02787 13.437C7.23843 13.513 7.428 13.3801 7.428 13.3801L9.87131 11.3871L13.6626 14.0065ZM14.3141 3.60473C14.3141 3.60473 14.8406 3.32001 14.8196 3.60473C14.8196 3.60473 14.9038 3.6427 14.6301 3.90848C14.3773 4.13629 8.41659 8.95757 7.61615 9.60286C7.55297 9.64082 7.51087 9.69783 7.51087 9.77376L7.27922 11.558C7.23703 11.7478 6.96328 11.7668 6.90009 11.596L5.91009 8.67285C5.868 8.55895 5.91009 8.42601 6.03647 8.35017L14.3141 3.60473Z" fill="white"/>
+                        </svg>
+                    </a>
+                  </li>
+                  <li class="links-header__item">
+                    <a href="https://wa.me/+79152366569" class="links-header__link" target="_blank" rel="noopener noreferrer">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__svg-icon">
+                        <path d="M14.8161 3.20802L14.8177 3.20961C16.332 4.71169 17.1786 6.74386 17.1786 8.91002C17.1786 13.3735 13.5244 17.0428 9.02349 17.0428C7.685 17.0428 6.34875 16.733 5.14758 16.0711L5.09366 16.0414L5.034 16.0566L0.888672 17.1163L1.9981 13.0955L2.01473 13.0353L1.98501 12.9802C1.31411 11.738 0.91378 10.3669 0.913788 8.95502L0.913772 8.95344C0.869238 4.49194 4.52166 0.822266 9.06891 0.822266C11.2087 0.822266 13.3025 1.6625 14.8161 3.20802ZM2.51525 15.3566L2.44716 15.6131L2.70425 15.5472L5.28225 14.8859L5.49716 14.9924C6.56666 15.6367 7.81891 15.9574 9.06891 15.9574C10.3681 15.9574 11.6685 15.5897 12.7391 14.8977C16.083 12.8694 17.0562 8.58411 15.0142 5.26977C12.9696 1.9511 8.64991 0.986524 5.30975 3.01119C1.96459 5.03886 0.989822 9.37052 3.03325 12.6411L3.036 12.6454L3.17833 12.8572L2.51525 15.3566ZM12.9986 10.9424C13.0171 10.9517 13.0328 10.9609 13.0459 10.9691V10.9704V10.9716V10.9729V10.9741V10.9754V10.9767V10.9779V10.9792V10.9805V10.9818V10.983V10.9844V10.9856V10.9869V10.9882V10.9894V10.9908V10.992V10.9933V10.9946V10.9959V10.9972V10.9985V10.9998V11.0011V11.0024V11.0037V11.0049V11.0063V11.0076V11.0089V11.0102V11.0115V11.0128V11.0141V11.0154V11.0167V11.018V11.0194V11.0207V11.0219V11.0233V11.0246V11.0259V11.0272V11.0285V11.0299V11.0312V11.0325V11.0338V11.0351V11.0364V11.0378V11.0391V11.0404V11.0417V11.043V11.0444V11.0457V11.047V11.0483V11.0496V11.0509V11.0523V11.0536V11.0549V11.0562V11.0575V11.0589V11.0602V11.0615V11.0629V11.0641V11.0654V11.0668V11.0681V11.0694V11.0707V11.072V11.0734V11.0747V11.076V11.0773V11.0786V11.0799V11.0813V11.0825V11.0839V11.0852V11.0864V11.0878V11.0891V11.0904V11.0917V11.093V11.0943V11.0956V11.0969V11.0982V11.0995V11.1008V11.1021V11.1034V11.1047V11.1059V11.1073V11.1085V11.1099V11.1111V11.1124V11.1137V11.1149V11.1162V11.1175V11.1188V11.12V11.1214V11.1226V11.1239V11.1251V11.1264V11.1277V11.1289V11.1302V11.1314V11.1327V11.1339V11.1352V11.1364V11.1377V11.1389V11.1402V11.1414V11.1426V11.1439V11.1451V11.1464V11.1476V11.1488V11.15V11.1513V11.1524V11.1537V11.1549V11.1561V11.1573V11.1585V11.1597V11.1609V11.1621V11.1633V11.1645V11.1657V11.1669V11.168V11.1692V11.1704V11.1716V11.1728V11.1739V11.1751V11.1763V11.1774V11.1785V11.1797V11.1809V11.182V11.1831V11.1843V11.1854V11.1865V11.1877V11.1888V11.1899V11.191C13.0006 11.4155 12.9587 11.6136 12.8809 11.7679C12.8494 11.8304 12.7804 11.9014 12.6832 11.9978C12.6467 12.034 12.6097 12.0617 12.5637 12.096L12.5612 12.0979C12.517 12.1308 12.4641 12.1701 12.4107 12.2229L12.3199 12.3131C12.2952 12.3375 12.2712 12.3509 12.2248 12.3713C12.2192 12.3738 12.2132 12.3764 12.207 12.379C12.1627 12.3983 12.1027 12.4243 12.0344 12.4683C11.8649 12.551 11.6216 12.6284 11.4304 12.6284H11.4287H11.4272H11.4256H11.4247H11.4232H11.4216H11.4199H11.4183H11.4167H11.4158H11.4142H11.4126H11.4117H11.4101H11.4092H11.4077H11.406H11.4052H11.4035H11.4018H11.4002H11.3993H11.3977H11.396H11.3943H11.3935H11.3917H11.3901H11.3884H11.3867H11.3858H11.3842H11.3825H11.3816H11.3799H11.3791H11.3782H11.3773H11.3757H11.3747H11.3731H11.3722H11.3713H11.3696H11.3679H11.367H11.3652H11.3636H11.3627H11.3618H11.3609H11.3601H11.3592H11.3583H11.3574H11.3566H11.3557H11.3548H11.3539H11.3531H11.3522H11.3513H11.3504H11.3496H11.3487H11.3478H11.3469H11.346H11.3442H11.3425H11.3416H11.3398H11.3381H11.3372H11.3363H11.3354H11.3345H11.3327H11.3318H11.3309H11.3292H11.3282H11.3274H11.3265H11.3256H11.3247H11.3229H11.322H11.3211H11.3193H11.3184H11.3175H11.3166H11.3157H11.3148H11.3139H11.313H11.3121H11.3112H11.3103H11.3094H11.3085H11.3076H11.3067H11.3057H11.3048H11.3039H11.3022H11.3012H11.3003H11.2994H11.2985H11.2976H11.2967H11.2957H11.2948H11.2939H11.293H11.2912H11.2903H11.2894H11.2885H11.2876H11.2867H11.2857H11.2848H11.2839H11.283H11.2821H11.2812H11.2802H11.2793H11.2784H11.2775H11.2766H11.2757H11.2747H11.2738H11.2729H11.272H11.2711H11.2701H11.2692H11.2682H11.2673H11.2664H11.2655H11.2646H11.2637H11.2627H11.2618H11.2609H11.26H11.2591H11.2582H11.2572H11.2562H11.2553H11.2544H11.2535H11.2526H11.2517H11.2507H11.2498H11.2488H11.2479H11.247H11.2461H11.2452H11.2442H11.2433H11.2424H11.2414H11.2405H11.2396H11.2387H11.2377H11.2368H11.2359H11.2349H11.234H11.2331H11.2322H11.2312H11.2303H11.2294H11.2284H11.2275H11.2266H11.2257H11.2247H11.2238H11.2228H11.2219H11.221H11.2201H11.2192H11.2182H11.2172H11.2163H11.2154H11.2145H11.2136H11.2127H11.2117H11.2107H11.2098H11.2089H11.208H11.2071H11.2061H11.2052H11.2042H11.2033H11.2024H11.2014H11.2005H11.1996H11.1987H11.1977H11.1968H11.1958H11.1949H11.194H11.1931H11.1922H11.1912H11.1902H11.1893H11.1884H11.1875H11.1866H11.1857H11.1847H11.1837H11.1828H11.1819H11.181H11.1801H11.1791H11.1782H11.1772H11.1763H11.1754H11.1745H11.1735H11.1726H11.1717H11.1707H11.1698H11.1689H11.168H11.167H11.1661H11.1652H11.1642H11.1633H11.1624H11.1615H11.1606H11.1596H11.1587H11.1577H11.1568H11.1559H11.155H11.1541H11.1532H11.1522H11.1512H11.1503H11.1494H11.1485H11.1476H11.1467H11.1457H11.1448H11.1439H11.143H11.1421H11.1411H11.1402H11.1392H11.1383H11.1374H11.1365H11.1356H11.1347H11.1337H11.1328H11.1319H11.131H11.1301H11.1292H11.1282H11.1273H11.1264H11.1255H11.1246H11.1237H11.1227H11.1218H11.1209H11.12H11.1191H11.1182H11.1172H11.1163H11.1154H11.1145H11.1136H11.1127H11.1117H11.1108H11.1099H11.109H11.1072H11.1063H11.1054H11.1045H11.1036H11.1027H11.1017H11.1008H11.0991H11.0982H11.0972H11.0963H11.0954H11.0945H11.0927H11.0918H11.0909H11.09H11.0891H11.0873H11.0864H11.0855H11.0847H11.0837H11.0828H11.0819H11.0802H11.0792H11.0783H11.0775H11.0766H11.0757H11.0747H11.073H11.0721H11.0712H11.0703H11.0694H11.0677H11.0667H11.065H11.0632H11.0623H11.0606H11.0588H11.0579H11.0571H11.0562H11.0553H11.0544H11.0536H11.0527H11.0518H11.0509H11.0501H11.0492H11.0483H11.0474H11.0466H11.0457H11.0448H11.0431H11.0413H11.0397H11.0387H11.037H11.0353H11.0344H11.0336H11.0318H11.0302H11.0284H11.0267H11.0258H11.025H11.0233H11.0225H11.0216H11.0207H11.0191H11.0174H11.0165H11.0157H11.014H11.0132H11.0115H11.0098H11.0082H11.0073H11.0057H11.0048H11.0032H11.0015H10.9998C10.9251 12.6066 10.8447 12.5953 10.7776 12.5858L10.771 12.5848C10.688 12.573 10.6233 12.5634 10.5709 12.5461L10.5608 12.5431C9.3655 12.2358 8.30166 11.6664 7.36849 10.8766C7.31491 10.8016 7.25208 10.7406 7.19191 10.6864C7.1695 10.6662 7.14816 10.6474 7.12733 10.6292C7.08375 10.591 7.04241 10.5547 6.99858 10.5113L6.81691 10.3311L6.81333 10.3276C6.10425 9.66827 5.57183 8.92144 5.1715 8.08569L5.12916 7.95952L5.12708 7.95336L5.1245 7.94736C4.99491 7.64752 4.91016 7.30819 4.91016 6.97302C4.91016 6.51802 5.07625 6.05877 5.371 5.67977C5.42066 5.62936 5.45825 5.57969 5.48991 5.53777L5.49175 5.53536C5.52141 5.49611 5.54616 5.46369 5.57558 5.43236C5.62433 5.40511 5.66966 5.37136 5.70558 5.34461L5.71033 5.34111C5.75858 5.30519 5.79233 5.28069 5.82283 5.26552L5.84533 5.25436L5.86325 5.23661L5.86841 5.23152C5.9065 5.22611 5.94075 5.21761 5.96725 5.21102C5.96908 5.21052 5.971 5.21002 5.97283 5.20961C6.02183 5.19744 6.0485 5.19169 6.07158 5.19169H6.07241H6.074H6.07558H6.07641H6.078H6.07958H6.08041H6.082H6.08358H6.08516H6.08675H6.08758H6.08916H6.09075H6.09158H6.09316H6.09475H6.09633H6.09791H6.09875H6.10033H6.10191H6.10275H6.10433H6.10591H6.1075H6.10908H6.11066H6.1115H6.11308H6.11466H6.11625H6.11783H6.11941H6.12025H6.12183H6.12341H6.125H6.12658H6.12816H6.12975H6.13133H6.13291H6.1345H6.13608H6.13766H6.13925H6.14083H6.14241H6.144H6.14558H6.14716H6.14875H6.15033H6.15191H6.15341H6.15425H6.15583H6.15741H6.159H6.1605H6.16133H6.16291H6.16441H6.16525H6.16683H6.16833H6.16991H6.1715H6.17308H6.17466H6.17616H6.177H6.1785H6.17933H6.18083H6.18166H6.18316H6.184H6.1855H6.18633H6.18783H6.18866H6.19016H6.191H6.1925H6.19333H6.19483H6.19641H6.19791H6.19875H6.20025H6.20183H6.20333H6.20483H6.20566H6.20716H6.20875H6.21025H6.21175H6.21258H6.21408H6.21558H6.21716H6.21866H6.22016H6.22175H6.22325H6.22475H6.22625H6.22775H6.22858H6.23008H6.23158H6.23308H6.23458H6.23608H6.23758H6.23908H6.24058H6.24208H6.24358H6.24508H6.24658H6.24808H6.24958H6.25108H6.25258H6.25408H6.25558H6.257H6.2585H6.26H6.2615H6.26291H6.26441H6.26591H6.26733H6.26883H6.27025H6.27175H6.27316H6.27466H6.27608H6.27758H6.279H6.2805H6.28191H6.28333H6.28483H6.28625H6.28766H6.28916H6.29058H6.292H6.29341H6.29483H6.29625H6.29766H6.29908H6.3005H6.30191H6.30333H6.30475H6.30616H6.30758H6.309H6.31041H6.31175H6.31316H6.31458H6.316H6.31733H6.31875H6.32008H6.3215H6.32283H6.32425H6.32558H6.327H6.32833H6.32975H6.33108H6.33241H6.33375H6.33516H6.3365H6.33783H6.33916H6.3405H6.34183H6.34316H6.3445H6.34583H6.34716H6.3485H6.34983H6.35116H6.35241H6.35375H6.35508H6.35641H6.35766H6.359H6.36025H6.36158H6.36283H6.36416H6.36541H6.36666H6.368H6.36925H6.3705H6.37183H6.37308H6.37433H6.37558H6.37683H6.37808H6.37933H6.38058H6.38183H6.38308H6.38425H6.3855H6.38675H6.388H6.38916H6.39041H6.39158H6.39283H6.394H6.39525H6.39641H6.39758H6.39883H6.4H6.40116H6.40233H6.4035H6.40466H6.40583H6.407H6.40816H6.40933H6.4105H6.41166H6.41283H6.41391H6.41508H6.41625H6.41733H6.4185H6.41958H6.42075H6.42183H6.42291H6.42408H6.42516H6.42625H6.42733H6.42841H6.4295H6.43058H6.43166H6.43275H6.43383H6.43491H6.5455C6.597 5.20952 6.632 5.22527 6.66133 5.24469C6.69125 5.26444 6.72108 5.29202 6.75466 5.34036C6.82358 5.47852 6.9885 5.83852 7.14375 6.19602C7.22291 6.37827 7.29883 6.55827 7.35758 6.70602C7.41866 6.85977 7.45516 6.96402 7.46316 7.00377L7.46508 7.01336L7.46816 7.02261C7.49208 7.09361 7.472 7.21702 7.40283 7.32577C7.35 7.38177 7.31116 7.44611 7.28166 7.49494L7.27816 7.50061C7.24216 7.56011 7.21766 7.59919 7.18825 7.62836C7.11533 7.70069 7.03241 7.79477 6.96941 7.86869C6.9375 7.90611 6.90991 7.93919 6.89041 7.96286L6.86733 7.99094L6.86308 7.99619C6.81 8.05336 6.79316 8.12419 6.78616 8.17269C6.77883 8.22336 6.77891 8.27802 6.77891 8.31961V8.32436V8.36136L6.79558 8.39444C6.80916 8.42144 6.81641 8.44019 6.82491 8.46227C6.82816 8.47069 6.83158 8.47952 6.83558 8.48952C6.84791 8.52011 6.86466 8.55669 6.896 8.59369L6.93175 8.66469L6.935 8.67069C7.17233 9.09452 7.50191 9.46669 7.824 9.78619C7.87558 9.83736 7.938 9.88686 7.99225 9.92986L7.99583 9.93277C8.05433 9.97919 8.10375 10.0187 8.14191 10.0564C8.52325 10.4348 8.99558 10.7143 9.50449 10.9437L9.51108 10.9464L9.71266 11.0264C9.74558 11.0536 9.78316 11.0764 9.81725 11.0933C9.856 11.1125 9.917 11.1376 9.97716 11.1376H10.0226C10.1567 11.1376 10.2994 11.0733 10.3779 10.9366C10.6882 10.5849 10.8552 10.3973 10.9445 10.2976C10.9864 10.2508 11.0111 10.2236 11.0253 10.208C11.0979 10.1726 11.155 10.1492 11.2352 10.1469C11.238 10.1482 11.242 10.1501 11.2477 10.1529L11.2495 10.1539C11.2597 10.1589 11.2775 10.1678 11.2967 10.1749C11.3082 10.1792 11.3227 10.1838 11.3394 10.1871C11.5658 10.2987 11.8512 10.4293 12.082 10.5328C12.2016 10.5864 12.307 10.6331 12.3825 10.6663L12.4713 10.7052L12.4953 10.7157L12.5017 10.7184L12.5027 10.7189L12.9986 10.9424Z" fill="white" stroke="white" stroke-width="0.373336"/>
+                        </svg>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -125,7 +143,7 @@
                   <ul class="maintenance__items">
                     <li class="maintenance__item item-maintenance">
                       <a href="#" class="item-maintenance__link">
-                        <div class="item-maintenance__img"><img src="img/main/maintenance/test.png" alt="Изображение услуги в мужском зале"></div>
+                        <div class="item-maintenance__img"><img src="img/main/maintenance/maintenance.jpg" alt="Изображение услуги в мужском зале"></div>
                         <div class="item-maintenance__body">
                           <div class="item-maintenance__title"><h3>Мужской зал</h3></div>
                           <div class="item-maintenance__description">
@@ -136,7 +154,7 @@
                     </li>
                     <li class="maintenance__item item-maintenance">
                       <a href="#" class="item-maintenance__link">
-                        <div class="item-maintenance__img"><img src="img/main/maintenance/test.png" alt="Изображение услуги в женском зале"></div>
+                        <div class="item-maintenance__img"><img src="img/main/maintenance/maintenance.jpg" alt="Изображение услуги в женском зале"></div>
                         <div class="item-maintenance__body">
                           <div class="item-maintenance__title"><h3>Женский зал</h3></div>
                           <div class="item-maintenance__description">
@@ -147,7 +165,7 @@
                     </li>
                     <li class="maintenance__item item-maintenance">
                       <a href="#" class="item-maintenance__link">
-                        <div class="item-maintenance__img"><img src="img/main/maintenance/test.png" alt="Изображение услуги педикюра, маникюра"></div>
+                        <div class="item-maintenance__img"><img src="img/main/maintenance/maintenance.jpg" alt="Изображение услуги педикюра, маникюра"></div>
                         <div class="item-maintenance__body">
                           <div class="item-maintenance__title"><h3>Педикюр, маникюр</h3></div>
                           <div class="item-maintenance__description">
@@ -158,7 +176,7 @@
                     </li>
                     <li class="maintenance__item item-maintenance">
                       <a href="#" class="item-maintenance__link">
-                        <div class="item-maintenance__img"><img src="img/main/maintenance/test.png" alt="Изображение услуги ресницы и брови"></div>
+                        <div class="item-maintenance__img"><img src="img/main/maintenance/maintenance.jpg" alt="Изображение услуги ресницы и брови"></div>
                         <div class="item-maintenance__body">
                           <div class="item-maintenance__title"><h3>Ресницы и брови</h3></div>
                           <div class="item-maintenance__description">
@@ -169,7 +187,7 @@
                     </li>
                     <li class="maintenance__item item-maintenance">
                       <a href="#" class="item-maintenance__link">
-                        <div class="item-maintenance__img"><img src="img/main/maintenance/test.png" alt="Изображение услуги уход и восстановлении волос"></div>
+                        <div class="item-maintenance__img"><img src="img/main/maintenance/maintenance.jpg" alt="Изображение услуги уход и восстановлении волос"></div>
                         <div class="item-maintenance__body">
                           <div class="item-maintenance__title"><h3>Уход и восстановление волос</h3></div>
                           <div class="item-maintenance__description">
@@ -180,7 +198,7 @@
                     </li>
                     <li class="maintenance__item item-maintenance">
                       <a href="#" class="item-maintenance__link">
-                        <div class="item-maintenance__img"><img src="img/main/maintenance/test.png" alt="Изображение услуги укладки/прически/макияж"></div>
+                        <div class="item-maintenance__img"><img src="img/main/maintenance/maintenance.jpg" alt="Изображение услуги укладки/прически/макияж"></div>
                         <div class="item-maintenance__body">
                           <div class="item-maintenance__title"><h3>Укладки/прически/макияж</h3></div>
                           <div class="item-maintenance__description">
@@ -191,7 +209,7 @@
                     </li>
                     <li class="maintenance__item item-maintenance">
                       <a href="#" class="item-maintenance__link">
-                        <div class="item-maintenance__img"><img src="img/main/maintenance/test.png" alt="Изображение биозавивка"></div>
+                        <div class="item-maintenance__img"><img src="img/main/maintenance/maintenance.jpg" alt="Изображение биозавивка"></div>
                         <div class="item-maintenance__body">
                           <div class="item-maintenance__title"><h3>Биозавивка</h3></div>
                           <div class="item-maintenance__description">
@@ -202,7 +220,7 @@
                     </li>
                     <li class="maintenance__item item-maintenance">
                       <a href="#" class="item-maintenance__link">
-                        <div class="item-maintenance__img"><img src="img/main/maintenance/test.png" alt="Изображение услуги окрашивание волос"></div>
+                        <div class="item-maintenance__img"><img src="img/main/maintenance/maintenance.jpg" alt="Изображение услуги окрашивание волос"></div>
                         <div class="item-maintenance__body">
                           <div class="item-maintenance__title"><h3>Окрашивание волос</h3></div>
                           <div class="item-maintenance__description">
@@ -213,7 +231,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="maintenance__button"><a href="#" class="maintenance__btn btn" title="Записатся" target="_blank"><span>Онлайн запись</span></a></div>
+                <div class="maintenance__button"><a href="https://n1167154.yclients.com" class="maintenance__btn btn" title="Записатся" target="_blank"><span>Онлайн запись</span></a></div>
               </div>
             </div>
             </div>
@@ -391,73 +409,60 @@
               <div class="masters__container __container masters__container-main">
                 <h2 class="masters__title title">НАШИ Мастера</h2>
                 <div class="masters__gallery gallery">
-                  <div class="gallery__list">
-                    <div class="gallery__card masters__card">
-                      <div class="gallery__image">
-                        <img src="img/main/masters/master1.png" alt="One of the masters" class="modal-active">
+                    <div class="gallery-swiper swiper">
+                      <div class="gallery-list gallery-swiper-wrapper swiper-wrapper">
+                        <div class="gallery__card masters__card gallery-swiper-slide swiper-slide">
+                          <div class="gallery__image">
+                            <img src="img/main/masters/master1.png" alt="One of the masters" class="modal-active">
+                          </div>
+                          <div class="gallery__name">Имя</div>
+                          <div class="gallery__proffesion">Профессия</div>
+                        </div>
+                        <div class="gallery__card masters__card gallery-swiper-slide swiper-slide">
+                          <div class="gallery__image">
+                            <img src="img/main/masters/master1.png" alt="One of the masters" class="modal-active">
+                          </div>
+                          <div class="gallery__name">Имя</div>
+                          <div class="gallery__proffesion">Профессия</div>
+                        </div>
+                        <div class="gallery__card masters__card gallery-swiper-slide swiper-slide">
+                          <div class="gallery__image">
+                            <img src="img/main/masters/master1.png" alt="One of the masters" class="modal-active">
+                          </div>
+                          <div class="gallery__name">Имя</div>
+                          <div class="gallery__proffesion">Профессия</div>
+                        </div>
+                        <div class="gallery__card masters__card gallery-swiper-slide swiper-slide">
+                          <div class="gallery__image">
+                            <img src="img/main/masters/master1.png" alt="One of the masters" class="modal-active">
+                          </div>
+                          <div class="gallery__name">Имя</div>
+                          <div class="gallery__proffesion">Профессия</div>
+                        </div>
+                        <div class="gallery__card masters__card gallery-swiper-slide swiper-slide">
+                          <div class="gallery__image">
+                            <img src="img/main/masters/master1.png" alt="One of the masters" class="modal-active">
+                          </div>
+                          <div class="gallery__name">Имя</div>
+                          <div class="gallery__proffesion">Профессия</div>
+                        </div>
+                        <div class="gallery__card masters__card gallery-swiper-slide swiper-slide">
+                          <div class="gallery__image">
+                            <img src="img/main/masters/master1.png" alt="One of the masters" class="modal-active">
+                          </div>
+                          <div class="gallery__name">Имя</div>
+                          <div class="gallery__proffesion">Профессия</div>
+                        </div>
                       </div>
-                      <div class="gallery__name">Имя</div>
-                      <div class="gallery__proffesion">Профессия</div>
                     </div>
-                    <div class="gallery__card masters__card">
-                      <div class="gallery__image">
-                        <img src="img/main/masters/master2.png" alt="One of the masters" class="modal-active">
-                      </div>
-                      <div class="gallery__name">Имя</div>
-                      <div class="gallery__proffesion">Профессия</div>
-                    </div>
-                    <div class="gallery__card masters__card">
-                      <div class="gallery__image">
-                        <img src="img/main/masters/master3.png" alt="One of the masters" class="modal-active">
-                      </div>
-                      <div class="gallery__name">Имя</div>
-                      <div class="gallery__proffesion">Профессия</div>
-                    </div>
-                    <div class="gallery__card masters__card">
-                      <div class="gallery__image">
-                        <img src="img/main/masters/master4.png" alt="One of the masters" class="modal-active">
-                      </div>
-                      <div class="gallery__name">Имя</div>
-                      <div class="gallery__proffesion">Профессия</div>
-                    </div>
-
-                    <div class="gallery__card masters__card">
-                      <div class="gallery__image">
-                        <img src="img/main/masters/master1.png" alt="One of the masters" class="modal-active">
-                      </div>
-                      <div class="gallery__name">Имя</div>
-                      <div class="gallery__proffesion">Профессия</div>
-                    </div>
-                    <div class="gallery__card masters__card">
-                      <div class="gallery__image">
-                        <img src="img/main/masters/master2.png" alt="One of the masters" class="modal-active">
-                      </div>
-                      <div class="gallery__name">Имя</div>
-                      <div class="gallery__proffesion">Профессия</div>
-                    </div>
-                    <div class="gallery__card masters__card">
-                      <div class="gallery__image">
-                        <img src="img/main/masters/master3.png" alt="One of the masters" class="modal-active">
-                      </div>
-                      <div class="gallery__name">Имя</div>
-                      <div class="gallery__proffesion">Профессия</div>
-                    </div>
-                    <div class="gallery__card masters__card">
-                      <div class="gallery__image">
-                        <img src="img/main/masters/master4.png" alt="One of the masters" class="modal-active">
-                      </div>
-                      <div class="gallery__name">Имя</div>
-                      <div class="gallery__proffesion">Профессия</div>
-                    </div>
-                  </div>
                 </div>
                 <div class="masters__more-details">
                   <span class="masters__more-details-line1"></span>
                   <a href="command.html" class="masters__button btn" title="Подробнее"><span>Подробнее</span></a>
                   <span class="masters__more-details-line2"></span>
                   <div class="masters__arrows">
-                    <button class="masters__arrow masters__arrow-prev" aria-label="Предыдущая кнопка"><span></span></button>
-                    <button class="masters__arrow masters__arrow-next" aria-label="Следующая кнопка"><span></span></button>
+                    <button class="masters__arrow masters__arrow-prev swiper-button-prev" aria-label="Предыдущая кнопка"><span></span></button>
+                    <button class="masters__arrow masters__arrow-next swiper-button-next" aria-label="Следующая кнопка"><span></span></button>
                   </div>
                 </div>
               </div>
@@ -504,6 +509,7 @@
                             </div>
                           </div>
                         </div>
+                        <button class="services__button-grey showmore btn" id="moreButton" aria-label="Показать еще"><span>Показать еще</span></button>
                       </div>
                       <div class="tabs__box" data-content="2">
                         <div class="tabs__gallery">
@@ -518,18 +524,8 @@
                             <div class="tabs__image"><img src="img/main/works/work4.jpeg" alt="Haircut" class="modal-active"></div>
                             <div class="tabs__image"><img src="img/main/works/work5.jpeg" alt="Haircut" class="modal-active"></div>
                           </div>
-                          <div class="tabs__block tabs__block-small">
-                            <div class="tabs__image"><img src="img/main/works/work2.jpeg" alt="Haircut" class="modal-active"></div>
-                            <div class="tabs__image"><img src="img/main/works/work3.jpeg" alt="Haircut" class="modal-active"></div>
-                            <div class="tabs__image"><img src="img/main/works/work1.jpeg" alt="Haircut" class="modal-active"></div>
-                            <div class="tabs__image"><img src="img/main/works/work4.jpeg" alt="Haircut" class="modal-active"></div>
-                          </div>
-                          <div class="tabs__block tabs-block-big">
-                            <div class="tabs__image">
-                              <img src="img/main/works/work5.jpeg" alt="Haircut" class="modal-active">
-                            </div>
-                          </div>
                         </div>
+                        <button class="services__button-grey showmore btn" id="moreButton" aria-label="Показать еще"><span>Показать еще</span></button>
                       </div>
                       <div class="tabs__box" data-content="3">
                         <div class="tabs__gallery">
@@ -556,6 +552,7 @@
                             </div>
                           </div>
                         </div>
+                        <button class="services__button-grey showmore btn" id="moreButton" aria-label="Показать еще"><span>Показать еще</span></button>
                       </div>
                       <div class="tabs__box" data-content="4">
                         <div class="tabs__gallery">
@@ -570,18 +567,8 @@
                             <div class="tabs__image"><img src="img/main/works/work4.jpeg" alt="Haircut" class="modal-active"></div>
                             <div class="tabs__image"><img src="img/main/works/work5.jpeg" alt="Haircut" class="modal-active"></div>
                           </div>
-                          <div class="tabs__block tabs__block-small">
-                            <div class="tabs__image"><img src="img/main/works/work2.jpeg" alt="Haircut" class="modal-active"></div>
-                            <div class="tabs__image"><img src="img/main/works/work3.jpeg" alt="Haircut" class="modal-active"></div>
-                            <div class="tabs__image"><img src="img/main/works/work1.jpeg" alt="Haircut" class="modal-active"></div>
-                            <div class="tabs__image"><img src="img/main/works/work4.jpeg" alt="Haircut" class="modal-active"></div>
-                          </div>
-                          <div class="tabs__block tabs-block-big">
-                            <div class="tabs__image">
-                              <img src="img/main/works/work5.jpeg" alt="Haircut" class="modal-active">
-                            </div>
-                          </div>
                         </div>
+                        <button class="services__button-grey showmore btn" id="moreButton" aria-label="Показать еще"><span>Показать еще</span></button>
                       </div>
                       <div class="tabs__box" data-content="5">
                         <div class="tabs__gallery">
@@ -608,6 +595,7 @@
                             </div>
                           </div>
                         </div>
+                        <button class="services__button-grey showmore btn" id="moreButton" aria-label="Показать еще"><span>Показать еще</span></button>
                       </div>
                     </div>
                   </div>
@@ -658,7 +646,7 @@
                 </div>
                 <div class="news__signup signup-news">
                   <span class="signup-news__line"></span>
-                  <div class="news__button"><a href="#" class="news__btn btn" title="Записатся" target="_blank"><span>Онлайн запись</span></a></div>
+                  <div class="news__button"><a href="news.html" class="news__btn btn" title="Записатся" target="_blank"><span>Смотреть все</span></a></div>
                   <span class="signup-news__line"></span>
                 </div>
               </div>
@@ -802,7 +790,7 @@
         <!-- ============================================================= -->
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
